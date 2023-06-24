@@ -105,6 +105,21 @@ input, select, textarea {
 		font-size: 13pt;
 	}
 
+	.name-holder {
+
+		border-radius: 25px;
+		background: #73AD21;
+		padding: 20px;
+		width: 250px;
+		height: 100px;
+		padding : 10 10 10 10px;
+		color: white;
+		margin-left:20px;
+		margin-right:20px;
+		text-align: center;
+		background: #1B70C8
+	  }
+
 	a {
 		-moz-transition: color .2s ease-in-out;
 		-webkit-transition: color .2s ease-in-out;
@@ -2036,7 +2051,8 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #282828;
+		font-family: ui-monospace,monospace;
+		background-color: #1B70C8;
 		text-align: center;
 		position: fixed;
 		left: 0;
@@ -2078,8 +2094,8 @@ input, select, textarea {
 		}
 
 			#nav a:hover {
-				color: #fff !important;
-				background: #383838;
+				color: #1B70C8 !important;
+				background: white;
 			}
 
 			#nav a.active {
@@ -2208,7 +2224,7 @@ input, select, textarea {
 		/* Articles */
 
 			#top {
-				padding: 8em 0;
+				padding: 6em 0;
 			}
 
 				#top .image {
