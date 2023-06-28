@@ -161,23 +161,85 @@
 				<div class="container">
 					<header>
 						<h2>Here's what we found out.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
 					</header>
 					<div class="row">
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Results</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
+								<h3><a href="#">Results of Regression Models</a></h3>
+								<p>
+									<div tabindex="-1">
+										<div>
+										<div>
+										<div>In exploring the <strong>slope with the greatest amount of tweets</strong> (2022), these are the following <strong>major events</strong> that occurred in the Philippines.</div>
+										</div>
+										<div tabindex="-1">
+										<div>
+										<div>
+										<div>
+										<div>
+										<p><strong><em>On April-June 2022</em></strong>: A lot of the topics tied in social media during the 2022 National Elections revolves around the Marcoses, Robredos, and more importantly the Aquinos. Since these three have historical links, topics such as the EDSA Revolution, Ninoy Aquino's unresolved death and contribution to the nation emerges again as the one of the trending topics among the Filipinos during this time.</p>
+										<p><strong><em>On July 2022</em></strong>: This is when President Bongbong Marcos was set to deliver his first State of the Nation Address (SONA) at the Batasang Pambansa Complex. This major event in the Philippines resurfaced the events about Martial Law during Ferdinand Marcos' reign. As such, since the Aquinos were a key player in toppling the dictatorial rule of Marcos, hearsays or unproven claims tend to arise as well.</p>
+										<p><strong><em>On August 2022</em></strong>: As confirmed by the National Historical Commission of the Philippines (NHCP), Ninoy Aquino is declared as a national hero. As such, during the month of National Heroes' Day, there is a hot debate in social media whether Ninoy Aquino deserves the title or not. Unfortunately, many Twitter users rely on claims that are already deemed false to support their arguments.</p>
+										<p>However, this is just the tip of the iceberg! We still need to know why these influx of tweets occur every year (why is there a pattern?). With that, we explore the next analysis.</p>
+										</div>
+										</div>
+										</div>
+										</div>
+										</div>
+										</div>
+										</div>
+								</p>	
+								</article>
 						</div>
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Results</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<h3><a href="#">Results of Peak Detection</a></h3>
+								<p>Using peak detection with <code>significance_threshold = 3</code>, we filter the peaks using the significance threshold we have set. Now, to visualize these peaks, we calculated for the local maxima using <code>argrelextrema()</code> to locate these peaks using a graph. Using these techniques, we found out that the following dates have major implications in the occurence of mis/disinformation tweets regarding the Aquinos:</p>
+								<ul>
+								<li><strong>February 25, 2020</strong> - EDSA Revolution Anniversary</li>
+								<li><strong>August 21, 2020</strong>- Ninoy Aquino Day</li>
+								<li><strong>February 26, 2021</strong>- EDSA Revolution Anniversary</li>
+								<li><strong>August 21, 2021</strong> - Ninoy Aquino Day</li>
+								<li><strong>January 25, 2022</strong>- Cory Aquino's Birthday</li>
+								<li><strong>February 25, 2022</strong> - EDSA Revolution Anniversary</li>
+								<li><strong>May 10, 2022</strong> - Philippine Elections</li>
+								<li><strong>August 21, 2022</strong> - Ninoy Aquino Day</li>
+								</ul>
+								<p>Now, this implies that mis/disinformation tweets <strong>significantly increases</strong> whenever <strong>one of these major events</strong> occur. It is likely possible that there is a <strong>underlying connection</strong> that drives trolls to <strong>stir or distort history</strong> whenever the <strong>topics/controversies on the Aquinos</strong> are once more debated in social media.</p>
 							</article>
 						</div>
+					</div>
+					<div>
+						<section class="box style1">
+							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+							<h3>Data Communication</h3>
+							<p>
+								<p><strong>Introduction</strong><br />Social media is quoted as the &ldquo;primary platform for politics,&rdquo; making it one of the most active mediums for publicity and political discourse.</p>
+								<p>Filipinos highly trust the variety of available information in social media platforms, causing a great divide in public opinion. There is an existing influx of misinformation that distorts the criteria for legitimate sources and amplifies the existence of echo chambers, which contain biased and misleading information.</p>
+								<p>Hence, our team investigated and analyzed the disinformation currently present on social media, in our study titled: "Decoding Dates: A Time Series Analysis on the Deceptions Bound to &ldquo;Dilawan"</p>
+								<p><strong>Materials and Methods</strong><br />The problem that we have identified that despite being one of the most prominent families in the Philippines for their political involvement and significant influence on Filipino democracy, the image and legacy of the Aquinos are facing a downturn as it is being tampered with and manipulated using disinformation.</p>
+								<p>This study aims to give light on the impact of recent events like the 2016 and 2022 Elections, EDSA People Power Anniversaries, and Ninoy Aquino Day on the spread of the allegations surrounding the Aquinos. The study is limited to utilizing relevant tweets from 2016-2022.</p>
+								<p>In line with this problem, we have:</p>
+								<ul>
+								<li><strong>Null hypothesis</strong>: the recent events had no significant effect on the number of allegation tweets towards the aquinos</li>
+								<li><strong>Alternative hypothesis</strong>: the recent events had a significant effect on the number of allegation tweets towards the aquinos</li>
+								</ul>
+								<p><strong>METHODOLOGY</strong></p>
+								<p>These are the methods that we have conducted to know which of the aforementioned hypothesis is accepted or rejected:</p>
+								<ol>
+								<li>Our group&rsquo;s primary step is to utilize a data scraper and twitter&rsquo;s advanced search feature, in gathering a pool of tweets containing keywords such as Ninoy traitor, Ninoy not a hero, Aquino murderer, corrupt, NPA.</li>
+								<li>From the gathered data, each group member has identified at least 50 Allegation tweets which are verified as mis/disinformation by trusted fact-checking organizations like VERA Files, Rappler, FactRakers, Agence France-Presse. As part of this step, it was ensured that every data collected can be classified as clean data and is labeled appropriately.</li>
+								<li>We also got tweets from the Master Dataset that contained misinformation about the Aquinos so that our findings and results will be more reliable. The tweets that we got were from Groups 35, 37, 46, and 59. Each group will also be credited in our poster for this. We also manually checked that those tweets obtained from them were clean and labeled correctly.</li>
+								<li>Afterwards, we move onto the data exploration part, the group accumulated a dataset of 722 tweets, which was later reduced to 713 after preprocessing. This step included ensuring that there are no missing values, handling missing values, handling outliers, ensuring formatting consistency, and normalization/standardization/scaling. It also included the preparation for the time series analysis which is counting the number of tweets per day, month, and year. All of these preprocessing steps are necessary to ensure that the data is ready for modeling and analysis.</li>
+								<li>Afterwards we proceed to statistical analysis and machine learning. For this, we used peak point detection and linear regression to find the trends of the tweets.</li>
+								</ol>
+								<p><strong>Results and Discussion</strong><br />What did you find out? What are the key takeaways?<br />Why should we care about your findings?<br />How do your findings fit into what we already know?</p>
+								<p><strong>Implications</strong><br />What are the potential impacts of your research?<br />Are there any practical applications?</p>
+								<p><strong>Conclusion</strong><br />What's the bottom line?<br />What can/should we do with this information?</p>
+							</p>
+						</section>
 					</div>
 					<footer>
 						<p>Want to learn more? Take a look at our source codes.</p>
